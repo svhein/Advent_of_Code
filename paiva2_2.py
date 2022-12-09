@@ -20,7 +20,7 @@ opponentShapes = {
 }
 
 myMoves = {
-    'X' : 'lose',
+    'X' : 'lost',
     'Y' : 'draw',
     'Z' : 'win'
 }
@@ -57,6 +57,7 @@ with open("inputs/tehtava2_input.txt", "r") as f:
         elif (myMove == 'lost'):
             points += gamePoint['lost']
             points += shapePoint[loseShape(opponentShape)]
+            print(f'mymove {myMove} loseshape {loseShape(opponentShape)} ')
 
 print(points)
         
