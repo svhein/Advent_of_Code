@@ -24,6 +24,7 @@ data.split(/\r?\n/).forEach(line => {
         if(i < n){
             chars.push(char)
         }
+        // check if the last half contains any same character than first half
         else if (chars.includes(char) && i >= n){
             if (!foundDuplicates.includes(char)){
                 foundDuplicates.push(char)
